@@ -47,6 +47,7 @@
             this.dgwCiclo.Name = "dgwCiclo";
             this.dgwCiclo.Size = new System.Drawing.Size(476, 225);
             this.dgwCiclo.TabIndex = 0;
+            this.dgwCiclo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwCiclo_CellClick);
             // 
             // label1
             // 
@@ -98,6 +99,7 @@
             this.btnModificar.TabIndex = 6;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnBorrar
             // 
@@ -107,6 +109,7 @@
             this.btnBorrar.TabIndex = 7;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnCancelar
             // 
@@ -116,6 +119,7 @@
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmCiclo
             // 

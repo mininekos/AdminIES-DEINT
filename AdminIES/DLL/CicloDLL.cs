@@ -19,6 +19,16 @@ namespace AdminIES.DLL
             return conexion.EjecutarComandoSinRetornarDatos($"Insert into Ciclo(Nombre) values ('{nombreCiclo}')");
         }
 
+        public bool Borrar(string idCiclo)
+        {
+            return conexion.EjecutarComandoSinRetornarDatos($"DELETE FROM Ciclo WHERE ID='{idCiclo}'");
+        }
+
+        public bool Modificar(string nombreCiclo, string id)
+        {
+            return conexion.EjecutarComandoSinRetornarDatos($"UPDATE CICLO SET Nombre='{nombreCiclo}' WHERE ID={id}");
+        }
+
         public DataSet MostrarCiclos() {
             SqlCommand sentencia = new SqlCommand("Select * from ciclo");
             return conexion.EjecutarSentencia(sentencia);

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DLL\CicloDLL.cs" />
     <Compile Include="DLL\Conexion.cs" />
+    <Compile Include="DLL\EstudianteDLL.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
