@@ -34,7 +34,7 @@ namespace AdminIES.DLL
             return conexion.EjecutarComandoSinRetornarDatos($"DELETE FROM Alumno_Asignar_Ciclo WHERE Id_estudiante='{idEstudiante}'");
         }
 
-        public bool Modificar(string id,string nombreEstudiante, string ape1, string ape2, string email, byte[] foto)
+        public bool Modificar(string id,string nombreEstudiante, string ape1, string ape2, string email, string foto)
         {
             return conexion.EjecutarComandoSinRetornarDatos($"UPDATE ESTUDIANTE SET NOMBRE='{nombreEstudiante}', PRIMERAPELLIDO='{ape1}', SEGUNDOAPELLIDO='{ape2}',EMAIL='{email}',FOTO='{foto}' WHERE ID={id}");
         }

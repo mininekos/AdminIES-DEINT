@@ -37,7 +37,7 @@ namespace AdminIES.frm
         }
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            estudianteDLL.Modificar(txtClave.Text, txtNombre.Text, txtPrimerApellido.Text, txtSegundoApellido.Text, txtCorreo.Text, null);
+            estudianteDLL.Modificar(txtClave.Text, txtNombre.Text, txtPrimerApellido.Text, txtSegundoApellido.Text, txtCorreo.Text, ImageToBase64(pbFoto.Image, ImageFormat.Png));
             dgwEstudiante.DataSource = estudianteDLL.MostrarEstudiantes().Tables[0];
         }
         private void btnBorrar_Click(object sender, EventArgs e)
