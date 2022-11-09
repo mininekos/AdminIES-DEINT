@@ -146,6 +146,7 @@
             this.pbFoto.Location = new System.Drawing.Point(12, 28);
             this.pbFoto.Name = "pbFoto";
             this.pbFoto.Size = new System.Drawing.Size(218, 227);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFoto.TabIndex = 12;
             this.pbFoto.TabStop = false;
             // 
@@ -206,6 +207,7 @@
             this.dgwEstudiante.Name = "dgwEstudiante";
             this.dgwEstudiante.Size = new System.Drawing.Size(692, 150);
             this.dgwEstudiante.TabIndex = 18;
+            this.dgwEstudiante.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwEstudiante_CellClick);
             // 
             // cbCiclo
             // 
@@ -245,7 +247,6 @@
             this.Controls.Add(this.label1);
             this.Name = "frmEstudiante";
             this.Text = "frmEstudiante";
-            this.Load += new System.EventHandler(this.frmEstudiante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwEstudiante)).EndInit();
             this.ResumeLayout(false);
