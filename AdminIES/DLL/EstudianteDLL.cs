@@ -15,7 +15,7 @@ namespace AdminIES.DLL
         {
             conexion = new Conexion();
         }
-        public bool Agregar(string nombreEstudiante, string ape1, string ape2,string email,byte[] foto)
+        public bool Agregar(string nombreEstudiante, string ape1, string ape2,string email,string foto)
         {
             return conexion.EjecutarComandoSinRetornarDatos($"INSERT INTO ESTUDIANTE(Nombre,PrimerApellido,SegundoApellido,Email,Foto) " +
                 $"values ('{nombreEstudiante}','{ape1}','{ape2}','{email}','{foto}')");
